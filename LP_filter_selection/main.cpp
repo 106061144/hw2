@@ -64,39 +64,39 @@ void situation3()
 }
 
 void wave(){
-    if (mode==1){// frequency=0.1
+    if (mode==1){// frequency=80
         while (1) {
             led = !led;
             for (float i = 0.0; i < 1.0; i += 1.0/300.0) {
                 Aout = i;
-                ThisThread::sleep_for(1ms/1);
+                ThisThread::sleep_for(1ms/10000);
             }
             for (float j = 1.0; j > 0.0; j -= 1.0f/700.0){
                 Aout = j;
-                ThisThread::sleep_for(1ms/1);
+                ThisThread::sleep_for(1ms/10000);
             }
         } 
-    } else if(mode==2) {// frequency=1
+    } else if(mode==2) {// frequency=0.08
         while (1) {
             flash = !flash;
-            for (float i = 0.0; i <= 1.0; i += 1.0/300.0) {
+            for (float i = 0.0; i <= 1.0; i += 1.0/300000.0) {
                 Aout = i;
-                ThisThread::sleep_for(1ms/10);
+                ThisThread::sleep_for(1ms/10000);
             }
-            for (float j = 1.0; j >= 0.0; j -= 1.0f/700.0){
+            for (float j = 1.0; j >= 0.0; j -= 1.0f/700000.0){
                 Aout = j;
-                ThisThread::sleep_for(1ms/10);
+                ThisThread::sleep_for(1ms/10000);
             }
         }
     } else {
-        while (1) {// frequency=10
-            for (float i = 0.0; i <= 1.0; i += 1.0/300.0) {
+        while (1) {// frequency=0.8
+            for (float i = 0.0; i <= 1.0; i += 1.0/30000.0) {
                 Aout = i;
-                ThisThread::sleep_for(1ms/100);
+                ThisThread::sleep_for(1ms/10000);
             }
-            for (float j = 1.0; j >= 0.0; j -= 1.0f/700.0){
+            for (float j = 1.0; j >= 0.0; j -= 1.0f/70000.0){
                 Aout = j;
-                ThisThread::sleep_for(1ms/100);
+                ThisThread::sleep_for(1ms/10000);
             }
         }
     }
