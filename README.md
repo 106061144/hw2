@@ -1,6 +1,6 @@
 # hw2
 (1) Setup
-main.cpp檔控制按鈕以及波形的產生，並在uLCD屏幕上建立一個menu，選項分別是mode1~3，當confirm mode1時會產生80Hz的三角波、mode2是0.08Hz、mode3為0.8Hz；FFT.py處理FFT轉換，將time domain以及frequency domain的波形匯成圖片
+main.cpp檔控制按鈕以及波形的產生，並在uLCD屏幕上建立一個menu，選項分別是mode1~3，當confirm mode1時會產生8Hz的三角波、mode2是0.08Hz、mode3為0.8Hz；FFT.py處理FFT轉換，將time domain以及frequency domain的波形匯成圖片
 (2) Results
 1. 8Hz(未濾波)
 ![image](https://user-images.githubusercontent.com/55796795/113536055-b4f7ac80-9607-11eb-85a9-02e9180122e5.png)
